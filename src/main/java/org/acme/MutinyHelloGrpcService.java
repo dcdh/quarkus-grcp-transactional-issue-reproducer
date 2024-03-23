@@ -5,13 +5,12 @@ import com.google.rpc.Code;
 import com.google.rpc.ErrorInfo;
 import com.google.rpc.Status;
 import io.grpc.protobuf.StatusProto;
-import io.quarkus.grpc.GrpcService;
 import io.smallrye.mutiny.Multi;
 import io.smallrye.mutiny.Uni;
 import jakarta.transaction.Transactional;
 
-@GrpcService
-public class HelloGrpcService implements HelloGrpc {
+//@GrpcService
+public class MutinyHelloGrpcService implements HelloGrpc {
 
     @Override
     @Transactional
